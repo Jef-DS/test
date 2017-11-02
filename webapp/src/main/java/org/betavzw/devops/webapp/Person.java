@@ -17,6 +17,7 @@ public class Person {
     }
 
     public void setName(String name) {
+        //if (name.equals("")) throw new IllegalArgumentException("Naam mag niet leeg zijn");
         this.name = name;
     }
     

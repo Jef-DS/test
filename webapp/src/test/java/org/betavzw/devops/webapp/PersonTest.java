@@ -45,5 +45,11 @@ public class PersonTest {
         String result = p.getName();
         assertEquals(expected, result);
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void testPersonNaamNietLeeg(){
+        String expected = "";
+        Person p = new Person();
+        p.setName(expected);
+    }
 
 }
