@@ -17,7 +17,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        if ("".equals(name)) throw new IllegalArgumentException("Name cannot be empty");
+        //if ("".equals(name)) throw new IllegalArgumentException("Name cannot be empty");
         this.name = name;
     }
     
