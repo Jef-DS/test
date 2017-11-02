@@ -17,39 +17,33 @@ import static org.junit.Assert.*;
  * @author Jef
  */
 public class PersonTest {
-    
+
     public PersonTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
 
     @Test
-    public void testPersonSetName(){
+    public void testPersonSetName() {
         String expected = "Joske";
         Person p = new Person();
         p.setName(expected);
         String result = p.getName();
         assertEquals(expected, result);
     }
-    @Test(expected = IllegalArgumentException.class)
-    public void testPersonNameNotEmpty(){
-        String expected = "";
-        Person p = new Person();
-        p.setName(expected);
-    
-}
+
 }
